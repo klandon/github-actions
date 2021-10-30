@@ -27,9 +27,9 @@ RUN apt-get update && \
     && tar xzf ./actions-runner-linux-x64-${RUNNER_VER}.tar.gz \
     && apt-get clean -y \
     && bin/installdependencies.sh
-    COPY entrypoint.sh /
-    RUN chmod +x /entrypoint.sh
-    ENTRYPOINT ["/entrypoint.sh"]
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 
 
 
