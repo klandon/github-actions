@@ -6,7 +6,9 @@ This repo holds Dockerfiles for simplistic GitHub Self Hosted Runners
     * You can find release information here : [Runner Releases](https://github.com/actions/runner/releases)
   * Each Folder represent the agent architecture
     * Example "LinuxX64" "Linux based X64"
-
+# Current Build Status
+* LinuxX64
+  * [![Docker Image CI](https://github.com/klandon/github-actions/actions/workflows/docker-image.yml/badge.svg)](https://github.com/klandon/github-actions/actions/workflows/docker-image.yml)
 # How To Use Locally
 To run locally switch the directory of the Architecture you want and run the docker build command
 ```console
