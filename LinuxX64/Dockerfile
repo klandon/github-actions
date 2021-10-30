@@ -13,7 +13,6 @@ RUN apt-get update && \
         sudo \
         gnupg-agent \
         software-properties-common \
-#        build-essential \
         zlib1g-dev \
         gettext \
         liblttng-ust0 \
