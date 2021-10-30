@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
+#set runner release version from github
 ENV RUNNER_VER="2.283.3"
 
 RUN apt-get update && \
