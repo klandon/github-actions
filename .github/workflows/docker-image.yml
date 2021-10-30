@@ -3,6 +3,8 @@ name: Docker Image CI
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'LinuxX64/**'
   pull_request:
     branches: [ main ]
 
@@ -22,4 +24,4 @@ jobs:
         echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile -t gitlab-runner:${{ steps.vars.outputs.sha_short }}
+      run: docker build . --file LinuxX64/Dockerfile -t gitlab-runner:${{ steps.vars.outputs.sha_short }}
